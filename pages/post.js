@@ -1,19 +1,12 @@
 import { useRouter } from "next/router";
 import Layout from "../components/Layout";
 
-const Content = () => {
+const Post = () => {
   const router = useRouter();
   return (
-    <div>
+    <Layout>
       <h1>{router.query.title}</h1>
       <p>This is my post.</p>
-    </div>
-  );
-};
-const Post = () => {
-  return (
-    <Layout>
-      <Content />
     </Layout>
   );
 };
