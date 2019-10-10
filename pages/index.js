@@ -1,103 +1,56 @@
-import Layout from "../components/Layout";
 import Link from "next/link";
 
-function getPosts() {
-  return [
-    { id: "hello-nextjs", title: "Hello Next.js" },
-    { id: "learn-nextjs", title: "Learn Next.js is awesome" },
-    { id: "deploy-nextjs", title: "Deploy apps with ZEIT" }
-  ];
-}
-
-const PostLink = ({ post }) => (
-  <li>
-    <Link href="/p/[id]" as={`/p/${post.id}`}>
-      <a>{post.title}</a>
+const Intro = () => (
+  <div className="card">
+    <p>
+      Hello, I'm <span>Katharine Francis</span>.
+    </p>
+    <p> I'm a Software Developer.</p>
+    <Link href="/home">
+      <a>Learn more</a>
     </Link>
     <style jsx>{`
-      li {
-        list-style: none;
-        margin: 5px 0;
+      .card {
+        height: 315px;
+        border: 5px solid white;
+        background-color: rgb(255, 204, 255, 0.6);
+        margin: 190px auto;
+        width: 450px;
+        border-radius: 90%;
+        text-align: center;
+        padding-top: 80px;
       }
-
+      .card:hover {
+      }
+      p {
+        font-size: 30px;
+        color: white;
+      }
       a {
+        font-size: 40px;
+        color: white;
+        display: block;
+        margin-top: 50px;
         text-decoration: none;
-        color: blue;
-        font-family: "Arial";
-      }
-
-      a:hover {
-        opacity: 0.6;
       }
     `}</style>
-  </li>
+  </div>
 );
-
-export default function Blog() {
+export default () => {
   return (
-    <Layout>
-      <h1>My Blog</h1>
-      <ul>
-        {getPosts().map(post => (
-          <PostLink key={post.id} post={post} />
-        ))}
-      </ul>
-      <style jsx>{`
-        h1,
-        a {
-          font-family: "Arial";
-        }
-
-        ul {
-          padding: 0;
-        }
-
-        li {
-          list-style: none;
-          margin: 5px 0;
-        }
-
-        a {
-          text-decoration: none;
-          color: blue;
-        }
-
-        a:hover {
-          opacity: 0.6;
+    <div className="opening">
+      <Intro />
+      <style jsx global>{`
+        body {
+          background-image: linear-gradient(
+              to bottom,
+              rgba(0, 0, 0, 0),
+              rgba(0, 0, 0, 0.9)
+            ),
+            url("../static/art-artistic-bright-2040273.jpg");
+          background-size: cover;
         }
       `}</style>
-    </Layout>
+    </div>
   );
-}
-
-// import Layout from "../components/Layout";
-// import Link from "next/link";
-// import fetch from "isomorphic-unfetch";
-
-// const Index = props => (
-//   <Layout>
-//     <h1>Batman TV Shows</h1>
-//     <ul>
-//       {props.shows.map(show => (
-//         <li key={show.id}>
-//           <Link href="/p/[id]" as={`/p/${show.id}`}>
-//             <a>{show.name}</a>
-//           </Link>
-//         </li>
-//       ))}
-//     </ul>
-//   </Layout>
-// );
-
-// Index.getInitialProps = async function() {
-//   const res = await fetch("https://api.tvmaze.com/search/shows?q=batman");
-//   const data = await res.json();
-
-//   console.log(`Show data fetched. Count: ${data.length}`);
-
-//   return {
-//     shows: data.map(entry => entry.show)
-//   };
-// };
-
-// export default Index;
+};
