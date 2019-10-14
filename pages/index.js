@@ -14,7 +14,7 @@ const Intro = () => (
         height: 315px;
         border: 5px solid white;
         background-color: rgb(255, 204, 255, 0.6);
-        margin: 190px auto;
+        margin: 10% auto;
         width: 450px;
         border-radius: 90%;
         text-align: center;
@@ -27,11 +27,14 @@ const Intro = () => (
         color: white;
       }
       a {
-        font-size: 40px;
+        font-size: 55px;
         color: white;
         display: block;
-        margin-top: 50px;
+        margin-top: 40px;
         text-decoration: none;
+      }
+      a:hover {
+        background: linear-gradient(#a359d9, rgb(163, 89, 217, 0.5));
       }
     `}</style>
   </div>

@@ -1,74 +1,114 @@
 import Layout from "../components/Layout";
-import Link from "next/link";
 
-function getPosts() {
-  return [
-    { id: "hello-nextjs", title: "Hello Next.js" },
-    { id: "learn-nextjs", title: "Learn Next.js is awesome" },
-    { id: "deploy-nextjs", title: "Deploy apps with ZEIT" }
-  ];
-}
+const Intro = () => {
+  return (
+    <div className="intro">
+      <h1>Katharine Francis</h1>
+      <p></p>
+      <style jsx>{`
+        .intro {
+          display: flex;
+          justify-content: center;
+          height: 250px;
+          background: linear-gradient(#0f0f0f, transparent);
+        }
+        h1 {
+          color: white;
+          font-family: Arial;
+          margin-top: 5%;
+        }
+        p {
+          color: white;
+        }
+      `}</style>
+    </div>
+  );
+};
 
-const PostLink = ({ post }) => (
-  <li>
-    <Link href="/p/[id]" as={`/p/${post.id}`}>
-      <a>{post.title}</a>
-    </Link>
-    <style jsx>{`
-      li {
-        list-style: none;
-        margin: 5px 0;
-      }
-
-      a {
-        text-decoration: none;
-        color: blue;
-        font-family: "Arial";
-      }
-
-      a:hover {
-        opacity: 0.6;
-      }
-    `}</style>
-  </li>
-);
-
-export default function Blog() {
+export default () => {
   return (
     <Layout>
-      <h1>My Blog</h1>
-      <ul>
-        {getPosts().map(post => (
-          <PostLink key={post.id} post={post} />
-        ))}
-      </ul>
+      <div className="homeBackground">
+        <Intro />
+      </div>
       <style jsx>{`
-        h1,
-        a {
-          font-family: "Arial";
-        }
-
-        ul {
-          padding: 0;
-        }
-
-        li {
-          list-style: none;
-          margin: 5px 0;
-        }
-
-        a {
-          text-decoration: none;
-          color: blue;
-        }
-
-        a:hover {
-          opacity: 0.6;
+        .homeBackground {
+          background-image: url("../static/art-close-up-computer-keyboard-3029916.jpg");
+          background-size: cover;
+          height: 100vh;
         }
       `}</style>
     </Layout>
   );
-}
+};
+// function getPosts() {
+//   return [
+//     { id: "hello-nextjs", title: "Hello Next.js" },
+//     { id: "learn-nextjs", title: "Learn Next.js is awesome" },
+//     { id: "deploy-nextjs", title: "Deploy apps with ZEIT" }
+//   ];
+// }
+
+// const PostLink = ({ post }) => (
+//   <li>
+//     <Link href="/p/[id]" as={`/p/${post.id}`}>
+//       <a>{post.title}</a>
+//     </Link>
+//     <style jsx>{`
+//       li {
+//         list-style: none;
+//         margin: 5px 0;
+//       }
+
+//       a {
+//         text-decoration: none;
+//         color: blue;
+//         font-family: "Arial";
+//       }
+
+//       a:hover {
+//         opacity: 0.6;
+//       }
+//     `}</style>
+//   </li>
+// );
+
+// export default function Blog() {
+//   return (
+//     <Layout>
+//       <h1>My Blog</h1>
+//       <ul>
+//         {getPosts().map(post => (
+//           <PostLink key={post.id} post={post} />
+//         ))}
+//       </ul>
+//       <style jsx>{`
+//         h1,
+//         a {
+//           font-family: "Arial";
+//         }
+
+//         ul {
+//           padding: 0;
+//         }
+
+//         li {
+//           list-style: none;
+//           margin: 5px 0;
+//         }
+
+//         a {
+//           text-decoration: none;
+//           color: blue;
+//         }
+
+//         a:hover {
+//           opacity: 0.6;
+//         }
+//       `}</style>
+//     </Layout>
+//   );
+// }
 
 // import Layout from "../components/Layout";
 // import Link from "next/link";
