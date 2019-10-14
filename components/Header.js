@@ -1,19 +1,24 @@
 import Link from "next/link";
+import styled from "styled-components";
 
-const linkStyle = {
-  marginRight: 15
-};
+export const Template = styled.div`
+  display: grid;
+  grid-template-columns: 10% auto 10% 10%;
+`;
 
 const Header = () => {
   return (
-    <div>
+    <Template>
       <Link href="/">
-        <a style={linkStyle}>Home</a>
+        <a>Logo</a>
+      </Link>
+      <Link href="/home">
+        <a>Home</a>
       </Link>
       <Link href="/about">
-        <a style={linkStyle}>About</a>
+        <a>About</a>
       </Link>
-    </div>
+    </Template>
   );
 };
 
