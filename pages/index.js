@@ -11,7 +11,7 @@ const Intro = () => (
     </Link>
     <style jsx>{`
       .card {
-        height: 315px;
+        height: 350px;
         border: 5px solid white;
         background-color: rgb(255, 204, 255, 0.6);
         margin: 10% auto;
@@ -34,7 +34,7 @@ const Intro = () => (
         text-decoration: none;
       }
       a:hover {
-        background: linear-gradient(#a359d9, rgb(163, 89, 217, 0.5));
+        text-shadow: 10px 5px 30px #3a0a63;
       }
     `}</style>
   </div>

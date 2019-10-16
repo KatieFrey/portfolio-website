@@ -8,7 +8,7 @@ export const Template = styled.div`
 
 const linkStyle = {
   textDecoration: "none",
-  marginBottom: "20px",
+  marginBottom: "10px",
   fontSize: "20px"
 };
 const Header = () => {

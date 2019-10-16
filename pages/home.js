@@ -1,24 +1,55 @@
 import Layout from "../components/Layout";
 
-const Intro = () => {
+const Hero = () => {
   return (
-    <div className="intro">
+    <div className="hero">
       <h1>Katharine Francis</h1>
-      <p></p>
+      <section>
+        <Intro />
+      </section>
       <style jsx>{`
-        .intro {
+        .hero {
           display: flex;
+          flex-direction: column;
           justify-content: center;
+          text-align: center;
           height: 250px;
           background: linear-gradient(#0f0f0f, transparent);
+          margin-top: 9%;
         }
         h1 {
           color: white;
           font-family: Arial;
           margin-top: 5%;
         }
+      `}</style>
+    </div>
+  );
+};
+
+const Intro = () => {
+  return (
+    <div className="intro">
+      <p>
+        What's up! Thanks for visiting my site. Like everything I do, we're
+        always under construction here, making things better and{" "}
+        <em>sweeeet</em>. As I said, before you so kindly clicked on this link,
+        I'm a software developer and my favorite thing to do is to make a
+        website more visually pleasing to the user and create and all around
+        optimal user experience.
+      </p>
+      <style jsx>{`
+        .intro {
+          justify-content: start;
+          margin: 2% auto;
+          width: 85%;
+          padding: 2%;
+        }
         p {
           color: white;
+          font-family: Arial;
+          line-height: 175%;
+          font-size: 120%;
         }
       `}</style>
     </div>
@@ -29,13 +60,13 @@ export default () => {
   return (
     <Layout>
       <div className="homeBackground">
-        <Intro />
+        <Hero />
       </div>
       <style jsx>{`
         .homeBackground {
+          height: 100vh;
           background-image: url("../static/art-close-up-computer-keyboard-3029916.jpg");
           background-size: cover;
-          height: 100vh;
         }
       `}</style>
     </Layout>
