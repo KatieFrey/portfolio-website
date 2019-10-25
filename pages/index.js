@@ -12,10 +12,8 @@ const Intro = () => (
     <style jsx>{`
       .card {
         height: 350px;
-        border: 5px solid white;
-        background-color: rgb(255, 204, 255, 0.6);
-        margin: 10% auto;
-        width: 450px;
+        margin: 13% auto;
+        width: 700px;
         border-radius: 90%;
         text-align: center;
         padding-top: 80px;
@@ -23,18 +21,22 @@ const Intro = () => (
       .card:hover {
       }
       p {
-        font-size: 30px;
+        font-size: 25px;
         color: white;
       }
+      p span {
+        font-size: 40px;
+      }
       a {
-        font-size: 55px;
+        font-size: 40px;
         color: white;
         display: block;
-        margin-top: 40px;
         text-decoration: none;
+        transition: font-size 1s;
       }
       a:hover {
         text-shadow: 10px 5px 30px #3a0a63;
+        font-size: 300%;
       }
     `}</style>
   </div>
@@ -51,7 +53,8 @@ export default () => {
               rgba(0, 0, 0, 0.9)
             ),
             url("../static/art-artistic-bright-2040273.jpg");
-          background-size: cover;
+          height: 100vh;
+          font-family: Courier New;
         }
       `}</style>
     </div>
