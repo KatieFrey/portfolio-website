@@ -2,7 +2,6 @@ import Header from "./Header";
 
 const layoutStyle = {
   height: "100vh",
-  margin: "-9% auto",
   background: "black",
   fontFamily: "Courier New"
 };
@@ -15,6 +14,10 @@ const Layout = props => {
       <style jsx>{`
         .children {
           font-family: Courier New;
+          height: 100vh;
+          width: 105vw;
+          margin-left: -2%;
+          padding-right: 10%;
         }
       `}</style>
     </div>

@@ -5,8 +5,9 @@ export const Template = styled.div`
   display: grid;
   grid-template-columns: 10% auto 10% 15% 10% 10%;
   position: fixed;
+  top: 0;
   padding: 2% 0 1.5%;
-  width: 98.3%;
+  width: 99%;
   background-color: rgba(0, 0, 0, 0.8);
 `;
 
