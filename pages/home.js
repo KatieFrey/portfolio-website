@@ -1,16 +1,16 @@
 import Layout from "../components/Layout";
-import Hero from "../components/Homepage/Hero.js";
+import SplashPage from "../components/Homepage/SplashPage.js";
 
 export default () => {
   return (
     <Layout>
       <div className="homeBackground">
-        <Hero />
+        <SplashPage />
       </div>
       <style jsx>{`
         .homeBackground {
           margin: -9% auto;
-          height: 310vh;
+          height: 475vh;
           background-image: url("../static/art-close-up-computer-keyboard-3029916.jpg");
           background-size: cover;
         }

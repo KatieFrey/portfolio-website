@@ -7,8 +7,10 @@ export const Template = styled.div`
   position: fixed;
   top: 0;
   padding: 2% 0 1.5%;
-  width: 99%;
+  margin-left: -1%;
+  width: 101%;
   background-color: rgba(0, 0, 0, 0.8);
+  z-index: 1;
 `;
 
 export const Container = styled.div``;
@@ -21,7 +23,7 @@ const Header = () => {
     <Container>
       <Template>
         <Link href="/">
-          <a style={linkStyle}>Logo</a>
+          <a className="logo">Logo</a>
         </Link>
         <div></div>
         <Link href="/home">
@@ -33,10 +35,14 @@ const Header = () => {
         <Link href="/about">
           <a style={linkStyle}>About</a>
         </Link>
-        <Link href="/contact">
+        <Link href="/home#contactus">
           <a style={linkStyle}>Contact</a>
         </Link>
         <style jsx>{`
+          .logo {
+            text-decoration: none;
+            margin-left: 20%;
+          }
           a {
             text-decoration: none;
             color: white;

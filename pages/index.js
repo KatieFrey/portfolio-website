@@ -36,7 +36,7 @@ const Intro = () => (
       }
       a:hover {
         text-shadow: 10px 5px 30px #3a0a63;
-        font-size: 300%;
+        font-size: 400%;
       }
     `}</style>
   </div>
