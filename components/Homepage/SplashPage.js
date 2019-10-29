@@ -24,7 +24,7 @@ const SplashPage = () => {
         h1 {
           color: white;
           font-family: Courier New;
-          margin: 10% auto;
+          margin: 9% auto 5%;
           letter-spacing: 5px;
           font-size: 250%;
         }
