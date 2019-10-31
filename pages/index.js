@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Header from "../components/Header";
 
 const Intro = () => (
   <div className="card">
@@ -44,6 +45,7 @@ const Intro = () => (
 export default () => {
   return (
     <div className="opening">
+      <Header />
       <Intro />
       <style jsx global>{`
         body {

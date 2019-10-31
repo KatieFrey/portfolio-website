@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 const Cards = ({ about, text, projects, contact, height }) => {
   return (
     <div>
@@ -6,7 +8,9 @@ const Cards = ({ about, text, projects, contact, height }) => {
           <section className="cards">
             <h1>
               <span></span>
-              {text}
+              <span>
+                {text} <hr />
+              </span>
               <span></span>
             </h1>
             <p>
@@ -16,17 +20,34 @@ const Cards = ({ about, text, projects, contact, height }) => {
                 also gets a kick out of back-end development.
               </span>
               <span></span>
+              <span>
+                <h2>
+                  <a
+                    href="../../static/katharine_francis_10_14.pdf"
+                    download="your-file"
+                  >
+                    Download My Resume
+                  </a>
+                </h2>
+              </span>
             </p>
+            <div></div>
             <p>
               <span></span>
-              <span>Click Here To Learn More</span>
+              <span>
+                Click{" "}
+                <Link href="/about">
+                  <a>Here</a>
+                </Link>{" "}
+                To Learn More
+              </span>
               <span></span>
             </p>
           </section>
           <style jsx>{`
             .cards {
               display: grid;
-              grid-template-rows: 20% 40% 40%;
+              grid-template-rows: 20% 40% 5% 35%;
               margin-top: 10% auto;
               background: rgba(255, 255, 255, 0.8);
               height: ${height};
@@ -40,8 +61,24 @@ const Cards = ({ about, text, projects, contact, height }) => {
             }
             p {
               display: grid;
-              grid-template-columns: 20% 60% 20%;
+              grid-template-columns: 20% 40% 5% 20%;
               font-size: 150%;
+            }
+            hr {
+              margin-left: -10%;
+              border: 1px solid black;
+              width: 70%;
+            }
+            a {
+              text-decoration: none;
+              color: black;
+              font-weight: 600;
+            }
+            a:visited {
+              color: black;
+            }
+            h2 {
+              text-align: center;
             }
           `}</style>
         </div>

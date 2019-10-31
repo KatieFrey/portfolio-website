@@ -1,3 +1,4 @@
+import Navbar from "./Navbar";
 import Header from "./Header";
 
 const layoutStyle = {
@@ -10,6 +11,7 @@ const Layout = props => {
   return (
     <div style={layoutStyle}>
       <Header />
+      <Navbar />
       <div className="children">{props.children}</div>
       <style jsx>{`
         .children {
