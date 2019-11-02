@@ -31,7 +31,7 @@ const SplashPage = () => {
         .little-space {
           display: block;
           border-bottom: 1px solid white;
-          margin: 15% auto;
+          margin: 11% auto;
           width: 60%;
         }
       `}</style>

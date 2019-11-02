@@ -2,17 +2,16 @@ import Navbar from "./Navbar";
 import Header from "./Header";
 
 const layoutStyle = {
-  height: "100vh",
-  background: "black",
+  //height: "100vh",
   fontFamily: "Courier New"
 };
 
-const Layout = props => {
+const Layout = ({ children, textColor, backgroundColor }) => {
   return (
     <div style={layoutStyle}>
       <Header />
-      <Navbar />
-      <div className="children">{props.children}</div>
+      <Navbar textColor={textColor} backgroundColor={backgroundColor} />
+      <div className="children">{children}</div>
       <style jsx>{`
         .children {
           font-family: Courier New;

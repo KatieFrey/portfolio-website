@@ -10,6 +10,10 @@ export default () => (
         href="../static/favicon.ico"
         type="image/x-icon"
       ></link>
+      <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"
+      ></link>
     </Head>
   </div>
 );

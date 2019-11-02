@@ -9,7 +9,8 @@ export const Template = styled.div`
   padding: 2% 0 1.5%;
   margin-left: -1%;
   width: 101%;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: ${props =>
+    props.backgroundColor ? props.backgroundColor : "palevioletred"};
   z-index: 1;
 `;
 
@@ -44,26 +45,26 @@ export const ImageLogo = styled.a`
   }
 `;
 
-const Navbar = () => {
+const Navbar = ({ textColor, backgroundColor }) => {
   return (
-    <Template>
+    <Template backgroundColor={backgroundColor}>
       <Link href="/">
-        <ImageLogo>KF</ImageLogo>
+        <ImageLogo textColor={textColor}>KF</ImageLogo>
       </Link>
       <div></div>
       <Link href="/home">
-        <StyledLink>
+        <StyledLink textColor={textColor}>
           <span>Home</span>
         </StyledLink>
       </Link>
       <Link href="/projects">
-        <StyledLink>Projects</StyledLink>
+        <StyledLink textColor={textColor}>Projects</StyledLink>
       </Link>
       <Link href="/about">
-        <StyledLink>About</StyledLink>
+        <StyledLink textColor={textColor}>About</StyledLink>
       </Link>
       <Link href="/home#contactus">
-        <StyledLink>Contact</StyledLink>
+        <StyledLink textColor={textColor}>Contact</StyledLink>
       </Link>
       <style jsx>{`
         span:hover {

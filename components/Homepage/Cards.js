@@ -32,7 +32,7 @@ const Cards = ({ about, text, projects, contact, height }) => {
               </span>
             </p>
             <div></div>
-            <p>
+            <p className="secondPara">
               <span></span>
               <span>
                 Click{" "}
@@ -41,6 +41,7 @@ const Cards = ({ about, text, projects, contact, height }) => {
                 </Link>{" "}
                 To Learn More
               </span>
+              <span></span>
               <span></span>
             </p>
           </section>
@@ -60,6 +61,11 @@ const Cards = ({ about, text, projects, contact, height }) => {
               font-size: 200%;
             }
             p {
+              display: grid;
+              grid-template-columns: 20% 40% 5% 20%;
+              font-size: 150%;
+            }
+            .secondPara {
               display: grid;
               grid-template-columns: 20% 40% 5% 20%;
               font-size: 150%;
