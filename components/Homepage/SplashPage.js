@@ -10,7 +10,7 @@ const SplashPage = () => {
       <div className="little-space" />
       <Cards about="about" text="About Me" height={height} />
       <div className="little-space" />
-      <Cards projects="projects" text="My projects section" height={height} />
+      <Cards experience="experience" text="Dev Experience" height={height} />
       <div className="little-space" id="contactus" />
       <Cards contact="contact" text="Contact info" height={height} />
       <style jsx>{`

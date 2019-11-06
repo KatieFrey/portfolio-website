@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-const Cards = ({ about, text, projects, contact, height }) => {
+const Cards = ({ about, text, experience, contact, height }) => {
   return (
     <div>
       {about ? (
@@ -88,38 +88,74 @@ const Cards = ({ about, text, projects, contact, height }) => {
             }
           `}</style>
         </div>
-      ) : projects ? (
+      ) : experience ? (
         <div>
           <section className="cards">
-            <h1>{text}</h1>
+            <h1>
+              <span></span>
+              <span>
+                {text} <hr />
+              </span>
+              <span></span>
+            </h1>
+            <div></div>
+            <div></div>
+            <div></div>
           </section>
           <style jsx>{`
             .cards {
+              display: grid;
+              grid-template-rows: 20% 40% 5% 35%;
               background: rgba(255, 255, 255, 0.8);
               height: ${height};
               clip-path: polygon(3% 0, 90% 0, 96% 100%, 10% 100%);
-              margin-top: 10% auto;
             }
             h1 {
-              text-align: center;
-              padding-top: 5%;
+              display: grid;
+              grid-template-columns: 15% 25% 60%;
+              text-transform: uppercase;
+              font-size: 200%;
+              margin-left: -5%;
+            }
+            hr {
+              margin-left: -10%;
+              border: 1px solid black;
+              width: 95%;
             }
           `}</style>
         </div>
       ) : contact ? (
         <div>
           <section className="cards">
-            <h1>{text}</h1>
+            <h1>
+              <span></span>
+              <span>
+                {text} <hr />
+              </span>
+              <span></span>
+            </h1>
+            <div></div>
+            <div></div>
+            <div></div>
           </section>
           <style jsx>{`
             .cards {
+              display: grid;
+              grid-template-rows: 20% 40% 5% 35%;
               background: rgba(255, 255, 255, 0.8);
               height: ${height};
               clip-path: polygon(10% 0, 96% 0, 90% 100%, 3% 100%);
             }
             h1 {
-              text-align: center;
-              padding-top: 5%;
+              display: grid;
+              grid-template-columns: 15% 25% 60%;
+              text-transform: uppercase;
+              font-size: 200%;
+            }
+            hr {
+              margin-left: -5%;
+              border: 1px solid black;
+              width: 80%;
             }
           `}</style>
         </div>
