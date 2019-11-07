@@ -14,6 +14,11 @@ export default () => (
         rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"
       ></link>
+      <link
+        rel="stylesheet"
+        href="https://s.pageclip.co/v1/pageclip.css"
+        media="screen"
+      ></link>
     </Head>
   </div>
 );

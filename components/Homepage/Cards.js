@@ -1,4 +1,5 @@
 import Link from "next/link";
+import ContactMe from "./ContactMe";
 
 const Cards = ({ about, text, experience, contact, height }) => {
   return (
@@ -73,7 +74,7 @@ const Cards = ({ about, text, experience, contact, height }) => {
             hr {
               margin-left: -10%;
               border: 1px solid black;
-              width: 70%;
+              width: 95%;
             }
             a {
               text-decoration: none;
@@ -134,14 +135,15 @@ const Cards = ({ about, text, experience, contact, height }) => {
               </span>
               <span></span>
             </h1>
-            <div></div>
-            <div></div>
+            <div className="contactHero">
+              <ContactMe />
+            </div>
             <div></div>
           </section>
           <style jsx>{`
             .cards {
               display: grid;
-              grid-template-rows: 20% 40% 5% 35%;
+              grid-template-rows: 20% 70% 10%;
               background: rgba(255, 255, 255, 0.8);
               height: ${height};
               clip-path: polygon(10% 0, 96% 0, 90% 100%, 3% 100%);
@@ -153,9 +155,9 @@ const Cards = ({ about, text, experience, contact, height }) => {
               font-size: 200%;
             }
             hr {
-              margin-left: -5%;
+              margin-left: -10%;
               border: 1px solid black;
-              width: 80%;
+              width: 95%;
             }
           `}</style>
         </div>
