@@ -1,7 +1,7 @@
 const ContactMe = () => (
   <form
     action="https://send.pageclip.co/kfZ1wO2kCgge5c1Pa1sjoV7oiIBpVaNO"
-    class="pageclip-form"
+    className="pageclip-form"
     method="post"
     className="form"
   >

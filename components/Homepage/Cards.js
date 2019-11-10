@@ -99,14 +99,19 @@ const Cards = ({ about, text, experience, contact, height }) => {
               </span>
               <span></span>
             </h1>
-            <div></div>
-            <div></div>
+            <div className="bulletpoints">
+              <div></div>
+              <hr />
+              <div></div>
+              <hr />
+              <div></div>
+            </div>
             <div></div>
           </section>
           <style jsx>{`
             .cards {
               display: grid;
-              grid-template-rows: 20% 40% 5% 35%;
+              grid-template-rows: 20% 70% 10%;
               background: rgba(255, 255, 255, 0.8);
               height: ${height};
               clip-path: polygon(3% 0, 90% 0, 96% 100%, 10% 100%);
@@ -118,10 +123,17 @@ const Cards = ({ about, text, experience, contact, height }) => {
               font-size: 200%;
               margin-left: -5%;
             }
+            .bulletpoints {
+              display: grid;
+              grid-template-columns: 32% 1% 32% 1% 32%;
+            }
             hr {
               margin-left: -10%;
               border: 1px solid black;
-              width: 95%;
+            }
+            .bulletpoints hr {
+              height: 70%;
+              margin: auto;
             }
           `}</style>
         </div>

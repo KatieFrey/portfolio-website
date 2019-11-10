@@ -1,5 +1,5 @@
 import Intro from "./Intro";
-import Cards from "./Cards";
+import AnimatedCard from "./AnimatedCard";
 
 const SplashPage = () => {
   let height = "55vh";
@@ -8,11 +8,15 @@ const SplashPage = () => {
       <h1>Katharine Francis</h1>
       <Intro />
       <div className="little-space" />
-      <Cards about="about" text="About Me" height={height} />
+      <AnimatedCard about="about" text="About Me" height={height} />
       <div className="little-space" />
-      <Cards experience="experience" text="Dev Experience" height={height} />
+      <AnimatedCard
+        experience="experience"
+        text="Dev Experience"
+        height={height}
+      />
       <div className="little-space" id="contactus" />
-      <Cards contact="contact" text="Contact info" height={height} />
+      <AnimatedCard contact="contact" text="Contact info" height={height} />
       <style jsx>{`
         .splashpage {
           display: flex;
