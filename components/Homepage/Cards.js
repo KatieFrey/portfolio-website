@@ -21,16 +21,6 @@ const Cards = ({ about, text, experience, contact, height }) => {
                 also gets a kick out of back-end development.
               </span>
               <span></span>
-              <span>
-                <h2>
-                  <a
-                    href="../../static/katharine_francis_10_14.pdf"
-                    download="your-file"
-                  >
-                    Download My Resume
-                  </a>
-                </h2>
-              </span>
             </p>
             <div></div>
             <p className="secondPara">
@@ -42,7 +32,6 @@ const Cards = ({ about, text, experience, contact, height }) => {
                 </Link>{" "}
                 To Learn More
               </span>
-              <span></span>
               <span></span>
             </p>
           </section>
@@ -63,7 +52,7 @@ const Cards = ({ about, text, experience, contact, height }) => {
             }
             p {
               display: grid;
-              grid-template-columns: 20% 40% 5% 20%;
+              grid-template-columns: 20% 70% 10%;
               font-size: 150%;
             }
             .secondPara {
@@ -100,11 +89,26 @@ const Cards = ({ about, text, experience, contact, height }) => {
               <span></span>
             </h1>
             <div className="bulletpoints">
-              <div></div>
+              <div>
+                <h2 style={{ margin: "30% 50%" }}>Skills</h2>
+              </div>
               <hr />
-              <div></div>
+              <div>
+                <h2 style={{ margin: "30% 35%" }}>Projects</h2>
+              </div>
               <hr />
-              <div></div>
+              <div>
+                <span>
+                  <h2 style={{ margin: "30% 30%" }}>
+                    <a
+                      href="../../static/katharine_francis_10_14.pdf"
+                      download="your-file"
+                    >
+                      Download Resume
+                    </a>
+                  </h2>
+                </span>
+              </div>
             </div>
             <div></div>
           </section>
@@ -134,6 +138,13 @@ const Cards = ({ about, text, experience, contact, height }) => {
             .bulletpoints hr {
               height: 70%;
               margin: auto;
+            }
+            a {
+              text-decoration: none;
+              color: black;
+            }
+            a:visited {
+              color: black;
             }
           `}</style>
         </div>

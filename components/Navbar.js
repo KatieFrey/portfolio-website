@@ -7,8 +7,8 @@ export const Template = styled.div`
   position: fixed;
   top: 0;
   padding: 2% 0 1.5%;
-  margin-left: -1%;
-  width: 101%;
+  margin-left: -2%;
+  width: 102%;
   background-color: ${props =>
     props.backgroundColor ? props.backgroundColor : "palevioletred"};
   z-index: 1;
@@ -39,6 +39,7 @@ export const ImageLogo = styled.a`
   margin-bottom: -5%;
   padding-bottom: 2%;
   transition: all 0.5s;
+  cursor: pointer;
   :hover {
     font-size: 225%;
     margin-bottom: -9%;
