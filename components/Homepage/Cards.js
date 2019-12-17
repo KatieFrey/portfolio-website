@@ -52,7 +52,7 @@ const Cards = ({ about, text, experience, contact, height }) => {
             }
             p {
               display: grid;
-              grid-template-columns: 20% 70% 10%;
+              grid-template-columns: 20% 60% 30%;
               font-size: 150%;
             }
             .secondPara {
@@ -89,25 +89,23 @@ const Cards = ({ about, text, experience, contact, height }) => {
               <span></span>
             </h1>
             <div className="bulletpoints">
-              <div>
-                <h2 style={{ margin: "30% 50%" }}>Skills</h2>
+              <div className="dev-expo">
+                <h2>Skills</h2>
               </div>
               <hr />
-              <div>
-                <h2 style={{ margin: "30% 35%" }}>Projects</h2>
+              <div className="dev-expo">
+                <h2>Projects</h2>
               </div>
               <hr />
-              <div>
-                <span>
-                  <h2 style={{ margin: "30% 30%" }}>
-                    <a
-                      href="../../static/katharine_francis_10_14.pdf"
-                      download="your-file"
-                    >
-                      Download Resume
-                    </a>
-                  </h2>
-                </span>
+              <div className="dev-expo">
+                <h2>
+                  <a
+                    href="../../static/katharine_francis_10_14.pdf"
+                    download="your-file"
+                  >
+                    Download Resume
+                  </a>
+                </h2>
               </div>
             </div>
             <div></div>
@@ -136,7 +134,7 @@ const Cards = ({ about, text, experience, contact, height }) => {
               border: 1px solid black;
             }
             .bulletpoints hr {
-              height: 70%;
+              height: 200px;
               margin: auto;
             }
             a {
@@ -145,6 +143,11 @@ const Cards = ({ about, text, experience, contact, height }) => {
             }
             a:visited {
               color: black;
+            }
+            .dev-expo {
+              display: flex;
+              justify-content: center;
+              align-items: center;
             }
           `}</style>
         </div>
