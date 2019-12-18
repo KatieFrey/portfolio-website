@@ -57,6 +57,7 @@ export default () => {
             url("../static/art-artistic-bright-2040273.jpg");
           height: 100vh;
           font-family: Courier New;
+          background-size: cover;
         }
       `}</style>
     </div>

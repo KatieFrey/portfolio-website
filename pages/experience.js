@@ -32,8 +32,15 @@ export default () => {
         </div>
       </div>
       <style jsx>{`
+        .experience {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+        }
         .skills {
           display: flex;
+          width: 90vw;
           flex-direction: column;
           justify-content: center;
           align-items: center;
