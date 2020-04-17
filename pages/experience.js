@@ -1,4 +1,5 @@
 import Layout from "../components/Layout";
+import ProjectCard from "../components/Projects/ProjectCard";
 
 export default () => {
   return (
@@ -22,13 +23,15 @@ export default () => {
             <img className="rails" src="../static/railslogo.png" />
             <img className="ruby" src="../static/rubylogo2.jpeg" />
             <img src="../static/rspec.jpeg" />
-            <img src="../static/postgres.png" />
+            <img className="postgres" src="../static/postgres.png" />
             <img src="../static/firebase.png" />
           </div>
         </div>
         <div className="projects">
           <h2>Projects</h2>
-          <p>Projects</p>
+          {/* <ProjectCard />
+          <ProjectCard />
+          <ProjectCard /> */}
         </div>
       </div>
       <style jsx>{`
@@ -44,9 +47,7 @@ export default () => {
           flex-direction: column;
           justify-content: center;
           align-items: center;
-        }
-        h2 {
-          margin: 12% 42% 5%;
+          margin: 5% 0;
         }
         p {
           color: black;
@@ -75,12 +76,15 @@ export default () => {
           margintop: 0.25%;
         }
         .rails {
-          margin: 1% 4%;
+          margin: 2% 4%;
         }
         .ruby {
-          margin: 0 4%;
+          margin: 2% 4%;
           height: 100px;
           width: 100px;
+        }
+        .postgres {
+          margin: 2.5% 0;
         }
       `}</style>
     </Layout>

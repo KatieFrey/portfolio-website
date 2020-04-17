@@ -134,7 +134,7 @@ const Cards = ({ about, text, experience, contact, height }) => {
               border: 1px solid black;
             }
             .bulletpoints hr {
-              height: 200px;
+              height: 150px;
               margin: auto;
             }
             a {
