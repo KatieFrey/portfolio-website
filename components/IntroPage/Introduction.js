@@ -31,7 +31,6 @@ const Introduction = () => (
       p {
         color: white;
         font-size: 45px;
-        overflow: hidden;
       }
       a {
         color: white;
