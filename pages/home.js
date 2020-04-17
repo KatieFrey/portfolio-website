@@ -11,7 +11,7 @@ export default () => {
         .homeBackground {
           margin: -9% auto;
           height: 475vh;
-          background-image: url("../static/art-close-up-computer-keyboard-3029916.jpg");
+          background-image: url("/art-close-up-computer-keyboard-3029916.jpg");
           background-size: cover;
         }
       `}</style>

@@ -1,23 +1,22 @@
 import Link from "next/link";
 import { Row, Col } from "reactstrap";
-import "bootstrap/dist/css/bootstrap.min.css";
 
 const Introduction = () => (
-  <div className="blurb">
-    <Row className="intro-row">
-      <Col className="intro-col">
+  <div className="message">
+    <Row>
+      <Col>
         <p>
           Hello, I'm <span>Katharine Francis</span>.
         </p>
       </Col>
     </Row>
-    <Row className="intro-row">
-      <Col className="intro-col">
+    <Row>
+      <Col>
         <p>I'm a Software Developer.</p>
       </Col>
     </Row>
-    <Row className="intro-row">
-      <Col className="intro-col">
+    <Row>
+      <Col>
         <Link href="/home">
           <a>Learn more</a>
         </Link>
@@ -25,7 +24,7 @@ const Introduction = () => (
     </Row>
 
     <style jsx>{`
-      .blurb {
+      .message {
         text-align: center;
       }
       p {
@@ -47,32 +46,3 @@ const Introduction = () => (
 );
 
 export default Introduction;
-
-// .card {
-//   height: 350px;
-//   margin: 13% auto;
-//   width: 700px;
-//   border-radius: 90%;
-//   text-align: center;
-//   padding-top: 80px;
-// }
-// .card:hover {
-// }
-// p {
-//   font-size: 25px;
-//   color: white;
-// }
-// p span {
-//   font-size: 40px;
-// }
-// a {
-//   font-size: 40px;
-//   color: white;
-//   display: block;
-//   text-decoration: none;
-//   transition: font-size 1s;
-// }
-// a:hover {
-//   text-shadow: 10px 5px 30px #3a0a63;
-//   font-size: 400%;
-// }
