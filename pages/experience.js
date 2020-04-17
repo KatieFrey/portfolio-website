@@ -12,19 +12,19 @@ export default () => {
             experience with . . .
           </p>
           <div className="skill-items">
-            <img src="../static/javascriptlogo.jpg" />
-            <img src="../static/640px-React-icon.svg.png" />
-            <img className="redux" src="../static/redux.png" />
-            <img src="../static/nodelogo.jpeg" />
-            <img className="express" src="../static/express.png" />
-            <img src="../static/jest.jpg" />
-            <img src="../static/styled-components.png" />
-            <img className="htmlcss" src="../static/htmlcss.png" />
-            <img className="rails" src="../static/railslogo.png" />
-            <img className="ruby" src="../static/rubylogo2.jpeg" />
-            <img src="../static/rspec.jpeg" />
-            <img className="postgres" src="../static/postgres.png" />
-            <img src="../static/firebase.png" />
+            <img src="/javascriptlogo.jpg" />
+            <img src="/640px-React-icon.svg.png" />
+            <img className="redux" src="/redux.png" />
+            <img src="/nodelogo.jpeg" />
+            <img className="express" src="/express.png" />
+            <img src="/jest.jpg" />
+            <img src="/styled-components.png" />
+            <img className="htmlcss" src="/htmlcss.png" />
+            <img className="rails" src="/railslogo.png" />
+            <img className="ruby" src="/rubylogo2.jpeg" />
+            <img src="/rspec.jpeg" />
+            <img className="postgres" src="/postgres.png" />
+            <img src="/firebase.png" />
           </div>
         </div>
         <div className="projects">

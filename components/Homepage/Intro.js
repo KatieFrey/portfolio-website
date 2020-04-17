@@ -8,7 +8,7 @@ const DownArrow = () => {
         color: "white",
         height: "40px",
         width: "40px",
-        margin: "0 auto"
+        margin: "0 auto",
       }}
     >
       <FontAwesomeIcon
@@ -22,7 +22,7 @@ const DownArrow = () => {
 
 const Image = () => (
   <div>
-    <img src="../../static/website-profile.jpg" alt="Me!"></img>
+    <img src="/website-profile.jpg" alt="Me!"></img>
     <style jsx>{`
       img {
         height: 50vh;
@@ -51,7 +51,7 @@ const Blurb = () => (
 );
 
 const imgStyle = {
-  margin: "auto"
+  margin: "auto",
 };
 const Intro = () => {
   return (
