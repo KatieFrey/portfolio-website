@@ -3,7 +3,7 @@ import { Row, Col } from "reactstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 const Introduction = () => (
-  <div className="card">
+  <div className="blurb">
     <Row className="intro-row">
       <Col className="intro-col">
         <p>
@@ -25,7 +25,7 @@ const Introduction = () => (
     </Row>
 
     <style jsx>{`
-      .card {
+      .blurb {
         text-align: center;
       }
       p {
