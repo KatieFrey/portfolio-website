@@ -16,6 +16,17 @@ class MyDocument extends Document {
           <Main />
           <NextScript />
         </body>
+        <style jsx>{`
+          body {
+            font-family: Courier New;
+            min-height: 100%;
+            min-width: 100%;
+            overflow-x: hidden;
+            overflow-y: hidden;
+            font-size: 1rem;
+            line-height: 1.5;
+          }
+        `}</style>
       </Html>
     );
   }
