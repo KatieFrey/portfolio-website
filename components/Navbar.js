@@ -58,8 +58,8 @@ const Navbar = ({ textColor, backgroundColor }) => {
           <span>Home</span>
         </StyledLink>
       </Link>
-      <Link href="/projects">
-        <StyledLink textColor={textColor}>Projects</StyledLink>
+      <Link href="/experience">
+        <StyledLink textColor={textColor}>Experience</StyledLink>
       </Link>
       <Link href="/about">
         <StyledLink textColor={textColor}>About</StyledLink>

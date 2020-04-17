@@ -24,6 +24,7 @@ const SplashPage = () => {
           height: 250px;
           background: linear-gradient(#0f0f0f, transparent);
           margin-top: 9%;
+          margin-left: 3%;
         }
         h1 {
           color: white;

@@ -1,4 +1,6 @@
-import Document, { Html, Head, Main, NextScript } from "next/document";
+import Document, { Html, Main, NextScript } from "next/document";
+import Header from "../components/Header";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 class MyDocument extends Document {
   static async getInitialProps(ctx) {
@@ -9,7 +11,7 @@ class MyDocument extends Document {
   render() {
     return (
       <Html>
-        <Head />
+        <Header />
         <body>
           <Main />
           <NextScript />

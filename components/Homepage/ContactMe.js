@@ -13,7 +13,7 @@ const ContactMe = () => (
     <div>
       <textarea type="textarea" name="message" placeholder="Message"></textarea>
 
-      <button type="submit" class="pageclip-form__submit">
+      <button type="submit" className="pageclip-form__submit">
         <span>Send</span>
       </button>
     </div>

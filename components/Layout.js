@@ -5,7 +5,7 @@ import MyDocument from "../pages/_document";
 
 const layoutStyle = {
   //height: "100vh",
-  fontFamily: "Courier New"
+  fontFamily: "Courier New",
 };
 
 const Layout = ({ children, textColor, backgroundColor }) => {
@@ -17,14 +17,14 @@ const Layout = ({ children, textColor, backgroundColor }) => {
         <div className="children">{children}</div>
         <script
           src="https://s.pageclip.co/v1/pageclip.js"
-          charset="utf-8"
+          charSet="utf-8"
         ></script>
         <style jsx>{`
           .children {
             font-family: Courier New;
             height: 100vh;
             width: 105vw;
-            margin-left: -2%;
+            margin-left: -5%;
             padding-right: 10%;
           }
         `}</style>
