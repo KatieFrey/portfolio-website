@@ -11,24 +11,21 @@ const layoutStyle = {
 const Layout = ({ children, textColor, backgroundColor }) => {
   return (
     <div style={layoutStyle}>
-      <body>
-        <Header />
-        <Navbar textColor={textColor} backgroundColor={backgroundColor} />
-        <div className="children">{children}</div>
-        <script
-          src="https://s.pageclip.co/v1/pageclip.js"
-          charSet="utf-8"
-        ></script>
-        <style jsx>{`
-          .children {
-            font-family: Courier New;
-            height: 100vh;
-            width: 105vw;
-            margin-left: -5%;
-            padding-right: 10%;
-          }
-        `}</style>
-      </body>
+      <Navbar textColor={textColor} backgroundColor={backgroundColor} />
+      <div className="children">{children}</div>
+      <script
+        src="https://s.pageclip.co/v1/pageclip.js"
+        charSet="utf-8"
+      ></script>
+      <style jsx>{`
+        .children {
+          font-family: Courier New;
+          height: 100vh;
+          width: 105vw;
+          margin-left: -5%;
+          padding-right: 10%;
+        }
+      `}</style>
     </div>
   );
 };
