@@ -1,4 +1,4 @@
-import Layout from "../components/AllPages/LayoutLayout";
+import Layout from "../components/AllPages/Layout";
 import ProjectCard from "../components/Projects/ProjectCard";
 
 export default () => {

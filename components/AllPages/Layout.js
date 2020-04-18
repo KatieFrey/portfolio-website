@@ -1,11 +1,7 @@
 import NavBarHeader from "./NavBarHeader";
-//import Header from "../Header";
 import Head from "next/head";
 
-//import MyDocument from "../../pages/_document";
-
 const layoutStyle = {
-  //height: "100vh",
   fontFamily: "Courier New",
 };
 

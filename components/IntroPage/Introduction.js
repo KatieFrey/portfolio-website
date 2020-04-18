@@ -40,6 +40,8 @@ const Introduction = () => (
       a:hover {
         text-shadow: 5px -5px 25px white;
         letter-spacing: 0.5em;
+        text-decoration: none;
+        color: white;
       }
     `}</style>
   </div>
