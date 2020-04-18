@@ -1,5 +1,7 @@
-import Document, { Html, Main, NextScript } from "next/document";
-import Header from "../components/Header";
+import Document, { Html, Head, Main, NextScript } from "next/document";
+//import Header from "../components/Header";
+
+// import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 
 class MyDocument extends Document {
   static async getInitialProps(ctx) {
@@ -10,8 +12,8 @@ class MyDocument extends Document {
   render() {
     return (
       <Html>
-        <Header />
         <body>
+          <Head />
           <Main />
           <NextScript />
           <script
@@ -31,6 +33,19 @@ class MyDocument extends Document {
             integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
             crossOrigin="anonymous"
           ></script>
+          <script
+            src="https://unpkg.com/react/umd/react.production.min.js"
+            crossOrigin
+          />
+
+          <script
+            src="https://unpkg.com/react-dom/umd/react-dom.production.min.js"
+            crossOrigin
+          />
+          <script
+            src="https://unpkg.com/react-bootstrap@next/dist/react-bootstrap.min.js"
+            crossOrigin
+          />
         </body>
       </Html>
     );

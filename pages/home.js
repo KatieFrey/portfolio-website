@@ -1,4 +1,4 @@
-import Layout from "../components/Layout";
+import Layout from "../components/AllPages/Layout";
 import SplashPage from "../components/Homepage/SplashPage.js";
 
 export default () => {

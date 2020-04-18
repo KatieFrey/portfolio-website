@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Row, Col } from "reactstrap";
+import { Row, Col } from "react-bootstrap";
 
 const Introduction = () => (
   <div className="message">
