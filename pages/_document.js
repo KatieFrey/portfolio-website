@@ -1,7 +1,4 @@
 import Document, { Html, Head, Main, NextScript } from "next/document";
-//import Header from "../components/Header";
-
-// import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 
 class MyDocument extends Document {
   static async getInitialProps(ctx) {

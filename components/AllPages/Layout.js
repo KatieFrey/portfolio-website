@@ -1,9 +1,10 @@
 import NavBarHeader from "./NavBarHeader";
 import Head from "next/head";
+import { Container } from "react-bootstrap";
 
-const layoutStyle = {
-  fontFamily: "Courier New",
-};
+// const layoutStyle = {
+//   fontFamily: "Courier New",
+// };
 
 const Layout = ({ children, textColor, backgroundColor }) => {
   return (
@@ -36,9 +37,11 @@ const Layout = ({ children, textColor, backgroundColor }) => {
           crossOrigin="anonymous"
         />
       </Head>
-      <NavBarHeader textColor={textColor} backgroundColor={backgroundColor} />
+      <div className="layout-container">
+        <NavBarHeader textColor={textColor} backgroundColor={backgroundColor} />
 
-      <div className="children">{children}</div>
+        <div className="children">{children}</div>
+      </div>
 
       <script
         src="https://s.pageclip.co/v1/pageclip.js"
@@ -74,6 +77,13 @@ const Layout = ({ children, textColor, backgroundColor }) => {
         src="https://unpkg.com/react-bootstrap@next/dist/react-bootstrap.min.js"
         crossOrigin="true"
       />
+      <style jsx>{`
+        .layout-container {
+          min-width: 100vw;
+          margin: 0;
+          padding 0;
+        }
+      `}</style>
     </div>
   );
 };
