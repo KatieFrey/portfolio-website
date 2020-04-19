@@ -37,7 +37,7 @@ const Layout = ({ children, textColor, backgroundColor }) => {
           crossOrigin="anonymous"
         />
       </Head>
-      <div className="layout-container">
+      <div>
         <NavBarHeader textColor={textColor} backgroundColor={backgroundColor} />
 
         <div className="children">{children}</div>
@@ -77,13 +77,6 @@ const Layout = ({ children, textColor, backgroundColor }) => {
         src="https://unpkg.com/react-bootstrap@next/dist/react-bootstrap.min.js"
         crossOrigin="true"
       />
-      <style jsx>{`
-        .layout-container {
-          min-width: 100vw;
-          margin: 0;
-          padding 0;
-        }
-      `}</style>
     </div>
   );
 };

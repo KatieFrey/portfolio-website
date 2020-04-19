@@ -29,7 +29,7 @@ const Introduction = () => (
       }
       p {
         color: white;
-        font-size: 45px;
+        font-size: 2em;
       }
       a {
         color: white;

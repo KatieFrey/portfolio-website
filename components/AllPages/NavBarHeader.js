@@ -10,8 +10,16 @@ const NavBarHeader = ({ textColor, backgroundColor }) => {
   const toggle = () => setIsOpen(!isOpen);
 
   return (
-    <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
-      <Navbar.Brand href="/">
+    <Navbar
+      collapseOnSelect
+      expand="lg"
+      style={{
+        backgroundColor,
+        color: textColor,
+        fontFamily: "Courier New",
+      }}
+    >
+      <Navbar.Brand>
         <Link href="/">
           <a>KF</a>
         </Link>
@@ -20,23 +28,34 @@ const NavBarHeader = ({ textColor, backgroundColor }) => {
       <Navbar.Collapse id="responsive-navbar-nav">
         <Nav className="mr-auto"></Nav>
         <Nav>
-          <Nav.Link href="#features">
-            <Link href="/home">
-              <a>Home</a>
-            </Link>
-          </Nav.Link>
-          <Nav.Link href="#features">
-            <Link href="/experience">
-              <a>Experience</a>
-            </Link>
-          </Nav.Link>
-          <Nav.Link href="#features">
-            <Link href="/about">
-              <a>About</a>
-            </Link>
-          </Nav.Link>
+          <Link href="/home">
+            <a>Home</a>
+          </Link>
+
+          <Link href="/experience">
+            <a>Experience</a>
+          </Link>
+
+          <Link href="/about">
+            <a>About</a>
+          </Link>
+
+          <Link href="/home#contactus">
+            <a>Contact</a>
+          </Link>
         </Nav>
       </Navbar.Collapse>
+      <style jsx>{`
+        a {
+          color: white;
+          margin-right: 30px;
+          font-size: 1.5em;
+        }
+        a:hover {
+          color: rgba(255, 255, 255, 0.8);
+          text-decoration: none;
+        }
+      `}</style>
     </Navbar>
   );
 };

@@ -1,8 +1,8 @@
-import Layout from "../components/AllPages/LayoutLayout";
+import Layout from "../components/AllPages/Layout";
 
 export default () => {
   return (
-    <Layout backgroundColor="palevioletred">
+    <Layout backgroundColor="#ed74aa">
       <div className="about">
         <p>
           I’m naturally a San Franciscan who found her way into the New York
@@ -29,7 +29,16 @@ export default () => {
       </div>
       <style jsx>{`
         .about {
-          height: 100vh;
+          background-image: radial-gradient(
+            rgba(255, 255, 255, 0.8),
+            rgba(255, 255, 255, 0)
+          ),
+          url("art-artistic-bright-2040273.jpg");
+        min-height: 100vh;
+        min-width: 100vw;
+        background-size: cover;
+        overflow: hidden;
+      }
         }
         p {
           margin: 15% auto 0;
