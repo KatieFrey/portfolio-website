@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Row, Col } from "reactstrap";
+import { Row, Col } from "react-bootstrap";
 
 const Introduction = () => (
   <div className="message">
@@ -29,7 +29,7 @@ const Introduction = () => (
       }
       p {
         color: white;
-        font-size: 45px;
+        font-size: 2em;
       }
       a {
         color: white;
@@ -40,6 +40,8 @@ const Introduction = () => (
       a:hover {
         text-shadow: 5px -5px 25px white;
         letter-spacing: 0.5em;
+        text-decoration: none;
+        color: white;
       }
     `}</style>
   </div>

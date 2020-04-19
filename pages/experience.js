@@ -1,9 +1,9 @@
-import Layout from "../components/Layout";
+import Layout from "../components/AllPages/Layout";
 import ProjectCard from "../components/Projects/ProjectCard";
 
 export default () => {
   return (
-    <Layout textColor="white" backgroundColor="#0f9ca6">
+    <Layout textColor="white" backgroundColor="#13adf7">
       <div className="experience">
         <div className="skills">
           <h2>Skills</h2>
@@ -40,6 +40,16 @@ export default () => {
           flex-direction: column;
           justify-content: center;
           align-items: center;
+          background-image: radial-gradient(
+            rgba(255, 255, 255, 0.8),
+            rgba(255, 255, 255, 0)
+          ),
+          url("art-artistic-bright-2040273.jpg");
+        min-height: 100vh;
+        min-width: 100vw;
+        background-size: cover;
+        overflow: hidden;
+      }
         }
         .skills {
           display: flex;

@@ -1,10 +1,11 @@
 import IndexPage from "../components/IntroPage/IndexPage";
-import { Container } from "reactstrap";
+
+import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 
 export default () => {
   return (
-    <Container>
+    <div>
       <IndexPage />
-    </Container>
+    </div>
   );
 };
