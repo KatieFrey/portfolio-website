@@ -4,4 +4,13 @@ module.exports = withCSS({
     url: false,
     importLoaders: 2,
   },
+  webpack(config) {
+    config.module.rules.push({
+      test: /\.(png|woff|woff2|eot|ttf|gif|jpg|ico|svg)$/,
+      use: {
+        loader: "file-loader",
+      },
+    });
+    return config;
+  },
 });
