@@ -21,7 +21,15 @@ const NavBarHeader = ({ textColor, backgroundColor }) => {
     >
       <Navbar.Brand>
         <Link href="/">
-          <a>KF</a>
+          <a
+            style={{
+              fontWeight: "bolder",
+              letterSpacing: ".15em",
+              fontSize: "2em",
+            }}
+          >
+            KF
+          </a>
         </Link>
       </Navbar.Brand>
       <Navbar.Toggle aria-controls="responsive-navbar-nav" />
