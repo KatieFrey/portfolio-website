@@ -10,6 +10,8 @@ const Intro = () => {
         <SplashPage />
         <HorizontalLine />
         <SkillsAndProjects />
+        <HorizontalLine />
+        <div>PlaceHolder for Contact Form</div>
       </Container>
       <style jsx>{`
         .homeBackground {
