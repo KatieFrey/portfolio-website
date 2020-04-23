@@ -1,7 +1,8 @@
 import React, { useState } from "react";
-import { Container, Row, Col } from "react-bootstrap";
+import { Row } from "react-bootstrap";
 import { featureSkills } from "../../data/featureSkills";
 import { useTrail, animated } from "react-spring";
+import VisibilitySensor from "react-visibility-sensor";
 
 const TickerComponent = () => {
   const [items, setItem] = useState([...featureSkills]);
