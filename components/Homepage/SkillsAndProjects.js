@@ -1,5 +1,6 @@
 import { Container, Row, Col } from "react-bootstrap";
 import Ticker from "./Ticker";
+import ProjectCards from "./ProjectCards";
 
 const SkillsAndProjects = () => {
   return (
@@ -13,6 +14,11 @@ const SkillsAndProjects = () => {
             <Ticker />
             <Row className="justify-content-md-center justify-content-xs-center">
               <h2>Projects</h2>
+            </Row>
+            <Row>
+              <div className="projectCards">
+                <ProjectCards />
+              </div>
             </Row>
           </Col>
         </div>
