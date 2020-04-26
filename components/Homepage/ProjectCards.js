@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 //import ProjectCard from "./ProjectCard";
-import { Card, CardDeck } from "react-bootstrap";
+import { Card, CardDeck, Col } from "react-bootstrap";
 //import { imageCards } from "../../data/imageCards";
 // import Red from "../../public/red_tracker-card.png";
 // import Stock from "../../public/stock_portfolio_card.png";
@@ -12,50 +12,97 @@ const ProjectCards = () => {
   //return <ProjectCard />;
   return (
     <CardDeck>
-      <Card>
-        <Card.Img variant="top" src="red_tracker_card.png" />
-        <Card.Body>
-          <Card.Title>Card title</Card.Title>
-          <Card.Text>
-            This is a wider card with supporting text below as a natural lead-in
-            to additional content. This content is a little bit longer.
-          </Card.Text>
-        </Card.Body>
-        <Card.Footer>
-          <small className="text-muted">Last updated 3 mins ago</small>
-        </Card.Footer>
-      </Card>
-      <Card>
-        <Card.Img variant="top" src="stock_portfolio_card.png" />
-        <Card.Body>
-          <Card.Title>Card title</Card.Title>
-          <Card.Text>
-            This card has supporting text below as a natural lead-in to
-            additional content.{" "}
-          </Card.Text>
-        </Card.Body>
-        <Card.Footer>
-          <small className="text-muted">Last updated 3 mins ago</small>
-        </Card.Footer>
-      </Card>
-      <Card>
-        <Card.Img variant="top" src="butterflies_card.png" />
-        <Card.Body>
-          <Card.Title>Card title</Card.Title>
-          <Card.Text>
-            This is a wider card with supporting text below as a natural lead-in
-            to additional content. This card has even longer content than the
-            first to show that equal height action.
-          </Card.Text>
-        </Card.Body>
-        <Card.Footer>
-          <small className="text-muted">Last updated 3 mins ago</small>
-        </Card.Footer>
-      </Card>
+      <Col xs={10} sm={6} md={4}>
+        <div className="hover-effect">
+          <div className="front">
+            <Card bg="danger" text="light">
+              <Card.Img variant="top" src="red_tracker_card.png" />
+            </Card>
+          </div>
+          <div className="back">
+            <Card bg="danger" text="light">
+              <Card.Body>
+                <div className="description-box"></div>
+                <Card.Title>Red Tracker</Card.Title>
+                <Card.Text>
+                  This is a wider card with supporting text below as a natural
+                </Card.Text>
+              </Card.Body>
+            </Card>
+          </div>
+        </div>
+      </Col>
+
+      <Col xs={10} sm={6} md={4}>
+        <div className="hover-effect">
+          <div className="front">
+            <Card>
+              <Card.Img variant="top" src="stock_portfolio_card.png" />
+            </Card>
+          </div>
+          <div className="back">
+            <Card>
+              <Card.Body>
+                <Card.Title>My Stock Portfolio</Card.Title>
+                <Card.Text>
+                  This card has supporting text below as a natural lead-in to
+                  additional content.{" "}
+                </Card.Text>
+              </Card.Body>
+            </Card>
+          </div>
+        </div>
+      </Col>
+
+      <Col xs={10} sm={6} md={4}>
+        <div className="hover-effect">
+          <div className="front">
+            <Card>
+              <Card.Img variant="top" src="butterflies_card.png" />
+            </Card>
+          </div>
+          <div className="back">
+            <Card>
+              <Card.Body>
+                <Card.Title>Support Butterflies</Card.Title>
+                <Card.Text>
+                  This is a wider card with supporting text.
+                </Card.Text>
+              </Card.Body>
+            </Card>
+          </div>
+        </div>
+      </Col>
+
       <style jsx>{`
-        img {
-          height: 160px;
-          width: 207px;
+        .back {
+          transform: rotateY(90deg);
+          min-height: 200px;
+          min-width: 200px;
+          margin-bottom: 4em;
+        }
+        .hover-effect:hover div.back {
+          animation: twirl 0.2s 0.2s ease-out forwards reverse;
+        }
+        .front {
+          position: absolute;
+          min-height: 200px;
+          min-width: 200px;
+        }
+        .hover-effect:hover div.front {
+          animation: twirl 0.2s ease-in forwards;
+        }
+        .description-box {
+          postion: relative;
+        }
+
+        @keyframes twirl {
+          0% {
+            transform: rotateY(0deg);
+          }
+          100% {
+            transform: rotateY(90deg);
+          }
         }
       `}</style>
     </CardDeck>

@@ -4,7 +4,7 @@ import ProjectCards from "./ProjectCards";
 
 const SkillsAndProjects = () => {
   return (
-    <Container>
+    <Container fluid>
       <Row>
         <div className="skills-and-projects">
           <Col>
@@ -15,7 +15,7 @@ const SkillsAndProjects = () => {
             <Row className="justify-content-md-center justify-content-xs-center">
               <h2>Projects</h2>
             </Row>
-            <Row>
+            <Row className="justify-content-between">
               <div className="projectCards">
                 <ProjectCards />
               </div>
@@ -36,6 +36,10 @@ const SkillsAndProjects = () => {
           color: white;
           font-family: Courier New;
           padding: 20px 0;
+        }
+        .projectCards {
+          min-height: 20em;
+          min-width: 100%;
         }
       `}</style>
     </Container>
