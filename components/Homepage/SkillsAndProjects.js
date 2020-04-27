@@ -1,9 +1,10 @@
 import { Container, Row, Col } from "react-bootstrap";
 import Ticker from "./Ticker";
+import ProjectCards from "./ProjectCards";
 
 const SkillsAndProjects = () => {
   return (
-    <Container>
+    <Container fluid>
       <Row>
         <div className="skills-and-projects">
           <Col>
@@ -13,6 +14,11 @@ const SkillsAndProjects = () => {
             <Ticker />
             <Row className="justify-content-md-center justify-content-xs-center">
               <h2>Projects</h2>
+            </Row>
+            <Row className="justify-content-center">
+              <div className="projectCards">
+                <ProjectCards />
+              </div>
             </Row>
           </Col>
         </div>
@@ -30,6 +36,10 @@ const SkillsAndProjects = () => {
           color: white;
           font-family: Courier New;
           padding: 20px 0;
+        }
+        .projectCards {
+          min-height: 20em;
+          min-width: 100%;
         }
       `}</style>
     </Container>

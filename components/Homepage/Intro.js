@@ -2,6 +2,7 @@ import { Container } from "react-bootstrap";
 import SplashPage from "./SplashPage";
 import HorizontalLine from "./HorizaontalLine";
 import SkillsAndProjects from "./SkillsAndProjects";
+import ContactMe from "./ContactMe";
 
 const Intro = () => {
   return (
@@ -11,7 +12,7 @@ const Intro = () => {
         <HorizontalLine />
         <SkillsAndProjects />
         <HorizontalLine />
-        <div>PlaceHolder for Contact Form</div>
+        <ContactMe />
       </Container>
       <style jsx>{`
         .homeBackground {
