@@ -39,10 +39,31 @@ const NavBarHeader = ({ textColor, backgroundColor }) => {
           <Link href="/home">
             <a>Home</a>
           </Link>
-
-          <Link href="/experience">
-            <a>Experience</a>
-          </Link>
+          <div className="dropdown">
+            <NavDropdown
+              title={
+                <span
+                  className="text-white my-auto"
+                  style={{ fontSize: "1.5em" }}
+                >
+                  Experience
+                </span>
+              }
+              id="collasible-nav-dropdown nav-dropdown"
+            >
+              <NavDropdown.Item href="/projects/1">
+                Red Tracker
+              </NavDropdown.Item>
+              <NavDropdown.Item href="/projects/2">
+                My Stock Portfolio
+              </NavDropdown.Item>
+              <NavDropdown.Item href="/projects/3">
+                Support Butterflies
+              </NavDropdown.Item>
+              <NavDropdown.Divider />
+              <NavDropdown.Item href="#action/3.4">Resume</NavDropdown.Item>
+            </NavDropdown>
+          </div>
 
           <Link href="/about">
             <a>About</a>
@@ -58,10 +79,15 @@ const NavBarHeader = ({ textColor, backgroundColor }) => {
           color: white;
           margin-right: 30px;
           font-size: 1.5em;
+          margin-top: 0.3em;
         }
         a:hover {
           color: rgba(255, 255, 255, 0.8);
           text-decoration: none;
+        }
+        .dropdown {
+          color: white;
+          margin-right: 30px;
         }
       `}</style>
     </Navbar>

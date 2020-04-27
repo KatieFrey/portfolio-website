@@ -1,6 +1,7 @@
 import NavBarHeader from "./NavBarHeader";
 import Head from "next/head";
 import { Container } from "react-bootstrap";
+import Footer from "./Footer";
 
 // const layoutStyle = {
 //   fontFamily: "Courier New",
@@ -41,6 +42,7 @@ const Layout = ({ children, textColor, backgroundColor }) => {
         <NavBarHeader textColor={textColor} backgroundColor={backgroundColor} />
 
         <div className="children">{children}</div>
+        <Footer />
       </div>
 
       <script

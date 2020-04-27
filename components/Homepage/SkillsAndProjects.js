@@ -15,7 +15,7 @@ const SkillsAndProjects = () => {
             <Row className="justify-content-md-center justify-content-xs-center">
               <h2>Projects</h2>
             </Row>
-            <Row className="justify-content-between">
+            <Row className="justify-content-center">
               <div className="projectCards">
                 <ProjectCards />
               </div>

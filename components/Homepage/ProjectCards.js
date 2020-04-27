@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Link from "next/link";
 //import ProjectCard from "./ProjectCard";
 import { Card, CardDeck, Col } from "react-bootstrap";
 //import { imageCards } from "../../data/imageCards";
@@ -12,7 +13,7 @@ const ProjectCards = () => {
   //return <ProjectCard />;
   return (
     <CardDeck>
-      <Col xs={10} sm={6} md={4}>
+      <Col xs={6} sm={6} md={4}>
         <div className="hover-effect">
           <div className="front">
             <Card bg="danger" text="light">
@@ -25,7 +26,9 @@ const ProjectCards = () => {
                 <div className="description-box"></div>
                 <Card.Title>Red Tracker</Card.Title>
                 <Card.Text>
-                  This is a wider card with supporting text below as a natural
+                  <Link href="/projects/1">
+                    <a>Project Description</a>
+                  </Link>
                 </Card.Text>
               </Card.Body>
             </Card>
@@ -33,7 +36,7 @@ const ProjectCards = () => {
         </div>
       </Col>
 
-      <Col xs={10} sm={6} md={4}>
+      <Col xs={6} sm={6} md={4}>
         <div className="hover-effect">
           <div className="front">
             <Card>
@@ -45,8 +48,9 @@ const ProjectCards = () => {
               <Card.Body>
                 <Card.Title>My Stock Portfolio</Card.Title>
                 <Card.Text>
-                  This card has supporting text below as a natural lead-in to
-                  additional content.{" "}
+                  <Link href="/projects/2">
+                    <a>Project Description</a>
+                  </Link>
                 </Card.Text>
               </Card.Body>
             </Card>
@@ -54,7 +58,7 @@ const ProjectCards = () => {
         </div>
       </Col>
 
-      <Col xs={10} sm={6} md={4}>
+      <Col xs={6} sm={6} md={4}>
         <div className="hover-effect">
           <div className="front">
             <Card>
@@ -66,7 +70,9 @@ const ProjectCards = () => {
               <Card.Body>
                 <Card.Title>Support Butterflies</Card.Title>
                 <Card.Text>
-                  This is a wider card with supporting text.
+                  <Link href="/projects/3">
+                    <a>Project Description</a>
+                  </Link>
                 </Card.Text>
               </Card.Body>
             </Card>
