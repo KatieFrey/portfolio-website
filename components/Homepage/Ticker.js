@@ -8,6 +8,7 @@ const TickerComponent = () => {
   const trail = useTrail(items.length, {
     opacity: 1,
     color: "white",
+    margin: "0 1em",
     fontFamily: "Courier New",
     from: { opacity: 0 },
   });
@@ -15,7 +16,7 @@ const TickerComponent = () => {
     <Row className="justify-content-between">
       {trail.map((props, index) => (
         <animated.h5 key={items[index]} style={props}>
-          {items[index]}
+          {` ${items[index]} `}
         </animated.h5>
       ))}
     </Row>
