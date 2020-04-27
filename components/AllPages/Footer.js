@@ -13,6 +13,12 @@ const Footer = () => (
         .center-text {
           text-align: center;
         }
+        .fix_to_bottom {
+          position: fixed;
+          bottom: 0;
+          left: 0;
+          width: 100vw;
+        }
       `}
     </style>
   </footer>

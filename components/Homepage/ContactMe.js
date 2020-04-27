@@ -7,7 +7,7 @@ const ContactMe = () => (
     method="post"
     className="form"
   >
-    <div className="contact-me-box">
+    <div className="contact-me-box" id="contactme">
       <Row className="justify-content-center">
         <h2>Contact Me</h2>
       </Row>

@@ -1,13 +1,19 @@
 export const featureSkills = [
-  "Javascript",
-  "React",
-  "Redux",
-  "React Hooks",
-  "Node.js",
-  "Express",
-  "HTML",
-  "CSS",
-  "Firebase",
+  "Javascript ",
+  "React ",
+  "Redux ",
+  "React-Hooks ",
+  "Node.js ",
+  "Express ",
+  "Postgres ",
+  "Sequelize ",
+  "Ruby/Rails ",
+  "MongoDB ",
+  "Next.js ",
+  "Socket.io ",
+  "HTML/CSS ",
+  "Bootstrap ",
+  "Firebase ",
 ];
 
 // export const featureSkills = [

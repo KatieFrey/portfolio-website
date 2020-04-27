@@ -13,6 +13,7 @@ const Intro = () => {
         <SkillsAndProjects />
         <HorizontalLine />
         <ContactMe />
+        <div className="extra-space"></div>
       </Container>
       <style jsx>{`
         .homeBackground {
@@ -24,6 +25,10 @@ const Intro = () => {
           min-height: 100vh;
           min-width: 100vw;
           background-size: cover;
+        }
+        .extra-space {
+          width: 10em;
+          height: 10em;
         }
       `}</style>
     </div>

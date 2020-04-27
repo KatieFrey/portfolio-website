@@ -30,10 +30,10 @@ export default () => {
       <style jsx>{`
         .about {
           background-image: radial-gradient(
-            rgba(255, 255, 255, 0.8),
-            rgba(255, 255, 255, 0)
+            rgba(255, 240, 245, 0.8),
+            rgba(219, 112, 147, 0.7)
           ),
-          url("art-artistic-bright-2040273.jpg");
+          url("20190707_152557.jpg");
         min-height: 100vh;
         min-width: 100vw;
         background-size: cover;
@@ -41,9 +41,17 @@ export default () => {
       }
         }
         p {
-          margin: 15% auto 0;
-          width: 50%;
-          color: black;
+          margin: 2em auto;
+          width: 75%;
+          color: #FFFAF0;
+          font-size: 1.5em;
+          font-weight: bold;
+          text-shadow: 2px 2px #777;
+          font-family: Courier New;
+        }
+        .extra-space {
+          width: 3em;
+          height: 3em;
         }
       `}</style>
     </Layout>

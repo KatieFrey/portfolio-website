@@ -61,7 +61,12 @@ const NavBarHeader = ({ textColor, backgroundColor }) => {
                 Support Butterflies
               </NavDropdown.Item>
               <NavDropdown.Divider />
-              <NavDropdown.Item href="#action/3.4">Resume</NavDropdown.Item>
+              <NavDropdown.Item
+                href="https://drive.google.com/file/d/1wttS2VCKIVtMxTs_8EEc_pYIEFj_2XIB/view?usp=sharing"
+                target="_blank"
+              >
+                Resume
+              </NavDropdown.Item>
             </NavDropdown>
           </div>
 
@@ -69,7 +74,7 @@ const NavBarHeader = ({ textColor, backgroundColor }) => {
             <a>About</a>
           </Link>
 
-          <Link href="/home#contactus">
+          <Link href="/home#contactme">
             <a>Contact</a>
           </Link>
         </Nav>
