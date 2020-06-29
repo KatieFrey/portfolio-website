@@ -12,13 +12,6 @@ const Project = () => {
   console.log("Id: ", id);
   console.log("Project: ", project);
 
-  // const [queryId, setQueryId] = useState(null)
-  // useEffect(()=> {
-  //   if(router && router.query) {
-  //     setQueryId(router.query.id)
-  //   }
-  // }, [router])
-
   return (
     <Layout textColor="white" backgroundColor="#13adf7">
       {id && project["img"] ? (
@@ -54,6 +47,11 @@ const Project = () => {
               <Link href={project["githubLink"]}>
                 <a>{project["githubTitle"]}</a>
               </Link>
+              {project["githubLink_be"] && (
+                <Link href={project["githubLink_be"]}>
+                  <a>{project["githubTitle_be"]}</a>
+                </Link>
+              )}
             </Col>
           </Row>
           <Row>
