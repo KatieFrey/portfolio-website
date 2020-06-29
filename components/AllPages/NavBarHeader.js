@@ -60,9 +60,12 @@ const NavBarHeader = ({ textColor, backgroundColor }) => {
               <NavDropdown.Item href="/projects/3">
                 Support Butterflies
               </NavDropdown.Item>
+              <NavDropdown.Item href="/projects/4">
+                Youth Connection
+              </NavDropdown.Item>
               <NavDropdown.Divider />
               <NavDropdown.Item
-                href="https://drive.google.com/file/d/1wttS2VCKIVtMxTs_8EEc_pYIEFj_2XIB/view?usp=sharing"
+                href="https://drive.google.com/file/d/1f_WhUsvg0hKCuhDwsrh_-EM8muLlPWBO/view?usp=sharing"
                 target="_blank"
               >
                 Resume

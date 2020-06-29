@@ -39,4 +39,17 @@ export const projectData = {
     website: "//butterflies.herokuapp.com",
     websiteTitle: "butterflies.herokuapp.com",
   },
+  4: {
+    img: "/youth_connection.jpg",
+    title: "Youth Connection",
+    tech: ["React", "React Context", "Ruby on Rails"],
+    description:
+      "Youth Connection is a web application catering to young black and brown users. The mission is to make extracurricular (specifically non-profit) organizations and programs more accessible and reachable to the youth. A user can search from our database for programs/companies providing technology support, youth programming, after-school programs, summer-school programs, internships, etc..",
+    githubLink: "//github.com/noobboon7/TeamHighFive_Front",
+    githubLink_be: "//github.com/noobboon7/TeamHighFive_api_v1",
+    githubTitle: "github.com/noobboon7/TeamHighFive_Front",
+    githubTitle_be: "github.com/noobboon7/TeamHighFive_api_v1",
+    website: "//youthconnection.netlify.app/",
+    websiteTitle: "youthconnection.netlify.app/",
+  },
 };
