@@ -23,7 +23,7 @@
     "cssnano": "^4.1.10",
     "isomorphic-unfetch": "^3.0.0",
     "jquery": "^3.5.0",
-    "next": "^9.3.6-canary.11",
+    "next": "^11.1.0",
     "node-sass": "^4.14.0",
     "popper.js": "^1.14.3",
     "react": "^16.13.1",
